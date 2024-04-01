@@ -2,8 +2,8 @@ import 'package:art_core/theme/text_styles.dart';
 import 'package:core/cache/caching_keys.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
-import 'package:home/presentation/pages/widgets/event_widgets/event_item.dart';
-import 'package:home/presentation/pages/widgets/event_widgets/event_item_model.dart';
+import 'package:home/presentation/pages/event/event_widgets/event_item.dart';
+import 'package:home/presentation/pages/event/event_widgets/event_item_model.dart';
 
 class EventGridView extends StatelessWidget {
   EventGridView({super.key});

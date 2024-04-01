@@ -1,9 +1,9 @@
 import 'package:art_core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:home/presentation/pages/widgets/event_widgets/event_item_model.dart';
+import 'package:home/presentation/pages/event/event_widgets/event_item_model.dart';
 
-import 'widgets/event_widgets/event_item.dart';
-import 'widgets/service_widgets/service_gridview.dart';
+import 'event/event_widgets/event_item.dart';
+import 'services/service_widgets/service_gridview.dart';
 
 class ServicesPage extends StatefulWidget {
   const ServicesPage({super.key});

@@ -20,6 +20,8 @@ class NavigatorKeys {
   // Account
   static const String ACCOUNT_KEY = "/account";
   static const String EVENT_PAGE = "/event";
+  static const String service_PAGE = "/service";
+  static const String directory_PAGE = "/service";
 
   static const String Privacy_policy = "/privacy_policy";
   static const String ACCOUNT_PAGE = "/account_page";

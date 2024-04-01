@@ -1,6 +1,8 @@
+import 'package:core/cache/caching_keys.dart';
+import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
-import 'package:home/presentation/pages/widgets/directory_widgets/directory_item.dart';
-import 'package:home/presentation/pages/widgets/service_widgets/service_item_model.dart';
+import 'package:home/presentation/pages/directory/directory_widgets/directory_item.dart';
+import 'package:home/presentation/pages/services/service_widgets/service_item_model.dart';
 
 class DirectoryListView extends StatelessWidget {
   const DirectoryListView({
@@ -23,8 +25,14 @@ class DirectoryListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return SizedBox(
             height: size / 3,
-            child: DirectoryItem(
-              servicesItemModel: items[index],
+            child: GestureDetector(
+              onTap: () {
+                Modular.to.pushNamed(
+                    NavigatorKeys.HomePage + NavigatorKeys.directory_PAGE);
+              },
+              child: DirectoryItem(
+                servicesItemModel: items[index],
+              ),
             ),
           );
         },

@@ -34,7 +34,7 @@ class EventActionButton extends StatelessWidget {
             Text(
               text,
               style:
-                  TextStyles.Regular14.copyWith(color: AppColors.hinttextcolor),
+                  TextStyles.Regular14.copyWith(color: AppColors.assetscolor),
             ),
           ],
         ),

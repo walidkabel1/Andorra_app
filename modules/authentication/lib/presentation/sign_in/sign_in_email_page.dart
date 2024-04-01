@@ -63,7 +63,7 @@ class SignInPage extends StatelessWidget {
                 textInputType: TextInputType.emailAddress,
                 hint: 'email@gmail.com'.trim(),
                 isRequired: true,
-                prefixIcon: Icon(
+                prefixIcon: const Icon(
                   Icons.email_outlined,
                   size: 18,
                   color: AppColors.bordercolor,

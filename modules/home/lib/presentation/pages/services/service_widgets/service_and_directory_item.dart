@@ -1,7 +1,7 @@
 import 'package:art_core/theme/app_colors.dart';
 import 'package:art_core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:home/presentation/pages/widgets/service_widgets/service_item_model.dart';
+import 'package:home/presentation/pages/services/service_widgets/service_item_model.dart';
 
 class ServiceAndDirectoreItem extends StatelessWidget {
   const ServiceAndDirectoreItem({super.key, required this.servicesItemModel});

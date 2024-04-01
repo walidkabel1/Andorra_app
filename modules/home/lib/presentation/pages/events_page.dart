@@ -1,6 +1,6 @@
 import 'package:art_core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:home/presentation/pages/widgets/event_widgets/event_gridview.dart';
+import 'package:home/presentation/pages/event/event_widgets/event_gridview.dart';
 
 class EventsPage extends StatelessWidget {
   const EventsPage({super.key});

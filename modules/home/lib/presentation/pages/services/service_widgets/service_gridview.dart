@@ -1,6 +1,8 @@
+import 'package:core/cache/caching_keys.dart';
+import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
-import 'package:home/presentation/pages/widgets/service_widgets/service_and_directory_item.dart';
-import 'package:home/presentation/pages/widgets/service_widgets/service_item_model.dart';
+import 'package:home/presentation/pages/services/service_widgets/service_and_directory_item.dart';
+import 'package:home/presentation/pages/services/service_widgets/service_item_model.dart';
 
 class ServicesgridView extends StatefulWidget {
   const ServicesgridView({super.key});
@@ -52,7 +54,12 @@ class _ServicesgridViewState extends State<ServicesgridView> {
             crossAxisSpacing: 6),
         itemCount: items.length,
         itemBuilder: (context, index) {
-          return ServiceAndDirectoreItem(servicesItemModel: items[index]);
+          return GestureDetector(
+              onTap: () {
+                Modular.to.pushNamed(
+                    NavigatorKeys.HomePage + NavigatorKeys.service_PAGE);
+              },
+              child: ServiceAndDirectoreItem(servicesItemModel: items[index]));
         });
   }
 }
